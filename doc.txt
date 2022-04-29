@@ -1,0 +1,11 @@
+Autor: Sander Lääts
+
+NightCalc - ÖÖ kalkulaator
+
+)Põhi
+Alguses oli keeruline projekti üles hakata ehitama, kuna olen vähe kokku puutunud node.js'iga.
+Harjutamiseks läks ca 5-6 tundi, et mingil määral saada kood probleemivabalt jooksma. Keeruliseim oli npm kaudu
+imporditud moodulite kasutamine, kuna varasemal meetodil, kus sidusin kohe html faili javascript failiga, tekkisid
+probleemid moodulites olevate funktsioonide kasutamisega. Näiteks tulid probleemid nagu, "require is not defined" ning
+"import is not recognized...". Commit nr 1 sisaldab endas ühte funktsiooni, mis väljastab sõnastiku, kus on kõik info
+õhtu kohta: päikeseloojangu ning -tõusu aeg, öö pikkus, antud koordinaadid jne.
