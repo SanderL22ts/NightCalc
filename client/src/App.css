@@ -1,0 +1,38 @@
+.App {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body {
+    background-color: #030d36;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-label{
+    text-align: center;
+    color:rgba(251, 255, 1, 0.8);
+}
+
+.grid-input{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 0px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+  color:white;
+}
+
+.nightData {
+    text-align: center;
+    margin: 15px;
+    background-color: rgba(218, 214, 13, 0.8);
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    display: inline-block;
+}

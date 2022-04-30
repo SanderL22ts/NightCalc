@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 20px;
+  border-radius: 100px;
+  background-color: 0a4ca1;
+  background-image: linear-gradient(315deg, #042344 0%, #072c7c 74%);
+
+}
+
+.wrapper_title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
