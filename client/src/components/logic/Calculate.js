@@ -1,19 +1,24 @@
 
-
-//import * as Sun from 'sunrise-sunset-js';
-//const Sun = require('sunrise-sunset-js');
-
+/**
+ * Find the time of sunset for given location and date
+ * @param {*} lat latitude coordinate
+ * @param {*} long longtitude coordinate
+ * @param {*} date date of the given day
+ * @returns time of sunset
+ */
 export function getSunset(lat, long, date) {
+
+    // For some reason, this will not output sunset, can't figure it out
+
     const Sun = require('sunrise-sunset-js');
 
-    date = Date.parse(date);
-    console.log("getSunset called");
-   // console.log("method given: lat = " + lat + " long = " + long + " date = " + date);
+    let parsedDate = new Date(date);
 
-    const sunset = Sun.getSunset(lat, long, date.getTime());
-    console.log("Sunset = " + sunset);
-    return sunset;
+    const sunset = Sun.getSunset(lat, long, parsedDate);
+    
+    return sunset.getTime;
 }
+
 
 /**
  * getNightLength method - find the length of the night since the given date

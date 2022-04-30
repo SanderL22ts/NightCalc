@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import "./components/Button.css"
+import NightData from "./components/NightData"
 import './App.css'
 import './components/logic/Calculate'
 import { getSunset } from "sunrise-sunset-js";
@@ -23,14 +24,12 @@ class App extends Component {
       lat: 26.728767072264652,
       long: 58.377543190703605,
       date: "2022-05-31",
-      sunset: getSunset(0,0,new Date())
   
     }
 
 
     
   }
-
   handleLongChange = (event) => {
     this.setState({
       long: event.target.value
@@ -79,12 +78,9 @@ class App extends Component {
             <button className="submitButton" type="Submit">Submit</button>
         </form>
         </Wrapper>
-        
-        <div className="nightData">
-          <h3>Data about the night</h3>
-        </div>
 
-
+        <NightData sunset={getSunset(26.728767072264652, 58.377543190703605, new Date())} />
+       
       </div>
     )
   }
